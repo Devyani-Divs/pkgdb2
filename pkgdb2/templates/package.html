@@ -72,7 +72,7 @@ confusing what the difference is between that status an the per-branch status)
                     if package.monitoring_status == False %} class="active"{% endif
                     -%}>No monitoring</label> <br />
             <input type="radio" id="monitoring" name="monitoring" value="1" />
-                <label for="monitoring" title="Lists bugs and builds for the package" {%-
+                <label for="monitoring" title="Lists bugs and builds about the package" {%-
                     if package.monitoring_status == True %} class="active"{% endif
                     -%}>Bugs &amp; builds</label> <br />
             <input type="radio" id="no_build" name="monitoring" value="nobuild" />
