@@ -68,7 +68,7 @@ confusing what the difference is between that status an the per-branch status)
         <td colspan="2" align="center">
           <div id="monitoring_block">
             <input type="radio" id="no_monitoring" name="monitoring" value="0" />
-                <label for="no_monitoring" {%-
+                <label for="no_monitoring" title="Click to toggle the monitor flag in the database" {%-
                     if package.monitoring_status == False %} class="active"{% endif
                     -%}>No monitoring</label> <br />
             <input type="radio" id="monitoring" name="monitoring" value="1" />
@@ -76,7 +76,7 @@ confusing what the difference is between that status an the per-branch status)
                     if package.monitoring_status == True %} class="active"{% endif
                     -%}>Bugs &amp; builds</label> <br />
             <input type="radio" id="no_build" name="monitoring" value="nobuild" />
-                <label for="no_build" {%-
+                <label for="no_build" title="Click to toggle the monitor flag in the database" {%-
                     if package.monitoring_status == "nobuild" %} class="active"{% endif
                     -%}>Bugs only</label>
             </div>
